@@ -1,7 +1,15 @@
 {
   "permissions": {
     "allow": [
-      "WebFetch(domain:prowedding.vn)"
+      "WebFetch(domain:prowedding.vn)",
+      "Bash(du -sh \"c:/Users/phuho/Desktop/Wedding/wedding/images/\"*.JPG)",
+      "Bash(convert --version)",
+      "Bash(python -c \"from PIL import Image; print\\(''Pillow ok''\\)\")",
+      "Bash(node -e \"require\\(''sharp''\\); console.log\\(''sharp ok''\\)\")",
+      "Bash(python:*)",
+      "Bash(du -sh \"c:/Users/phuho/Desktop/Wedding/wedding/images/\"*.webp)",
+      "Bash(head -5 echo \"---\" du -sh \"c:/Users/phuho/Desktop/Wedding/wedding/images/\"*.webp)",
+      "Read(//c/Users/phuho/Desktop/Wedding/wedding/**)"
     ]
   }
 }

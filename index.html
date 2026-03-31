@@ -215,7 +215,7 @@
             position: absolute;
             top: 0; left: 0;
             width: 100%; height: 100%;
-            background: url('images/DUY00662.JPG') center center / cover no-repeat;
+            background: url('images/DUY00662.webp') center center / cover no-repeat;
             filter: brightness(0.5);
             transform: scale(1.05);
             animation: slowZoom 20s ease infinite alternate;
@@ -587,28 +587,29 @@
             font-weight: 400;
         }
         .gallery-grid {
-            max-width: 1000px;
+            max-width: 960px;
             margin: 0 auto;
             display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            gap: 10px;
+            grid-template-columns: repeat(3, 1fr);
+            grid-auto-rows: 240px;
+            gap: 8px;
         }
         .gallery-item {
             position: relative;
             overflow: hidden;
-            border-radius: 8px;
+            border-radius: 4px;
             cursor: pointer;
-            aspect-ratio: 1;
+            background: var(--cream-dark);
         }
-        .gallery-item.tall { grid-row: span 2; aspect-ratio: auto; }
-        .gallery-item.wide { grid-column: span 2; aspect-ratio: 16/10; }
+        .gallery-item.tall { grid-row: span 2; }
+        .gallery-item.wide { grid-column: span 2; }
         .gallery-item img {
             width: 100%; height: 100%;
-            object-fit: cover;
+            object-fit: contain;
             transition: transform 0.5s ease;
         }
         .gallery-item:hover img {
-            transform: scale(1.1);
+            transform: scale(1.04);
         }
         .gallery-item::after {
             content: '';
@@ -674,7 +675,7 @@
         /* ===== SECTION 6: COUNTDOWN ===== */
         .countdown-section {
             padding: 80px 20px;
-            background: url('images/DUY00565.JPG') center / cover no-repeat fixed;
+            background: url('images/DUY00565.webp') center / cover no-repeat fixed;
             position: relative;
             text-align: center;
         }
@@ -1104,12 +1105,12 @@
 
             .gallery-grid {
                 grid-template-columns: repeat(2, 1fr);
+                grid-auto-rows: 180px;
             }
             .gallery-item.tall,
             .gallery-item.wide {
                 grid-row: auto;
                 grid-column: auto;
-                aspect-ratio: 1;
             }
 
             .countdown { gap: 15px; }
@@ -1221,7 +1222,7 @@
         <div class="couple-grid">
             <div class="couple-card fade-in-left">
                 <div class="photo-frame">
-                    <img src="images/DUY00473.JPG" alt="Chú rể" loading="lazy">
+                    <img src="images/DUY00473.webp" alt="Chú rể" loading="lazy">
                 </div>
                 <p class="role">Chú Rể</p>
                 <h3>Phù Hợp</h3>
@@ -1230,7 +1231,7 @@
             <div class="couple-heart scale-in">&#10084;</div>
             <div class="couple-card fade-in-right">
                 <div class="photo-frame">
-                    <img src="images/DUY00491.JPG" alt="Cô dâu" loading="lazy">
+                    <img src="images/DUY00491.webp" alt="Cô dâu" loading="lazy">
                 </div>
                 <p class="role">Cô Dâu</p>
                 <h3>Thanh Huyền</h3>
@@ -1294,68 +1295,44 @@
             <span class="line"></span>
         </div>
         <div class="gallery-grid">
-            <div class="gallery-item tall scale-in" onclick="openLightbox(0)">
-                <img src="images/DUY00465.JPG" alt="Ảnh cưới" loading="lazy">
+            <!-- Block 1: wide trái + tall phải -->
+            <div class="gallery-item wide scale-in" onclick="openLightbox(0)">
+                <img src="images/DUY00744.webp" alt="Ảnh cưới" loading="lazy">
             </div>
-            <div class="gallery-item scale-in" onclick="openLightbox(1)">
-                <img src="images/DUY00590.JPG" alt="Ảnh cưới" loading="lazy">
+            <div class="gallery-item tall scale-in" onclick="openLightbox(1)">
+                <img src="images/DUY00465.webp" alt="Ảnh cưới" loading="lazy">
             </div>
             <div class="gallery-item scale-in" onclick="openLightbox(2)">
-                <img src="images/DUY00627.JPG" alt="Ảnh cưới" loading="lazy">
+                <img src="images/DUY00590.webp" alt="Ảnh cưới" loading="lazy">
             </div>
             <div class="gallery-item scale-in" onclick="openLightbox(3)">
-                <img src="images/DUY00641.JPG" alt="Ảnh cưới" loading="lazy">
+                <img src="images/DUY00627.webp" alt="Ảnh cưới" loading="lazy">
             </div>
-            <div class="gallery-item scale-in" onclick="openLightbox(4)">
-                <img src="images/DUY00708.JPG" alt="Ảnh cưới" loading="lazy">
+            <!-- Block 2: tall trái + wide phải -->
+            <div class="gallery-item tall scale-in" onclick="openLightbox(4)">
+                <img src="images/DUY00857.webp" alt="Ảnh cưới" loading="lazy">
             </div>
             <div class="gallery-item wide scale-in" onclick="openLightbox(5)">
-                <img src="images/DUY00744.JPG" alt="Ảnh cưới" loading="lazy">
+                <img src="images/DUY01027.webp" alt="Ảnh cưới" loading="lazy">
             </div>
             <div class="gallery-item scale-in" onclick="openLightbox(6)">
-                <img src="images/DUY00778.JPG" alt="Ảnh cưới" loading="lazy">
+                <img src="images/DUY00826.webp" alt="Ảnh cưới" loading="lazy">
             </div>
             <div class="gallery-item scale-in" onclick="openLightbox(7)">
-                <img src="images/DUY00826.JPG" alt="Ảnh cưới" loading="lazy">
+                <img src="images/DUY00923.webp" alt="Ảnh cưới" loading="lazy">
             </div>
-            <div class="gallery-item scale-in" onclick="openLightbox(8)">
-                <img src="images/DUY00854.JPG" alt="Ảnh cưới" loading="lazy">
+            <!-- Block 3: wide trái + tall phải -->
+            <div class="gallery-item wide scale-in" onclick="openLightbox(8)">
+                <img src="images/DUY01146.webp" alt="Ảnh cưới" loading="lazy">
             </div>
             <div class="gallery-item tall scale-in" onclick="openLightbox(9)">
-                <img src="images/DUY00857.JPG" alt="Ảnh cưới" loading="lazy">
+                <img src="images/DUY01088.webp" alt="Ảnh cưới" loading="lazy">
             </div>
             <div class="gallery-item scale-in" onclick="openLightbox(10)">
-                <img src="images/DUY00923.JPG" alt="Ảnh cưới" loading="lazy">
+                <img src="images/DUY01060.webp" alt="Ảnh cưới" loading="lazy">
             </div>
             <div class="gallery-item scale-in" onclick="openLightbox(11)">
-                <img src="images/DUY00992.JPG" alt="Ảnh cưới" loading="lazy">
-            </div>
-            <div class="gallery-item wide scale-in" onclick="openLightbox(12)">
-                <img src="images/DUY01027.JPG" alt="Ảnh cưới" loading="lazy">
-            </div>
-            <div class="gallery-item scale-in" onclick="openLightbox(13)">
-                <img src="images/DUY01060.JPG" alt="Ảnh cưới" loading="lazy">
-            </div>
-            <div class="gallery-item scale-in" onclick="openLightbox(14)">
-                <img src="images/DUY01088.JPG" alt="Ảnh cưới" loading="lazy">
-            </div>
-            <div class="gallery-item scale-in" onclick="openLightbox(15)">
-                <img src="images/DUY01105.JPG" alt="Ảnh cưới" loading="lazy">
-            </div>
-            <div class="gallery-item scale-in" onclick="openLightbox(16)">
-                <img src="images/DUY01123.JPG" alt="Ảnh cưới" loading="lazy">
-            </div>
-            <div class="gallery-item scale-in" onclick="openLightbox(17)">
-                <img src="images/DUY01129.JPG" alt="Ảnh cưới" loading="lazy">
-            </div>
-            <div class="gallery-item wide scale-in" onclick="openLightbox(18)">
-                <img src="images/DUY01146.JPG" alt="Ảnh cưới" loading="lazy">
-            </div>
-            <div class="gallery-item scale-in" onclick="openLightbox(19)">
-                <img src="images/DUY01166.JPG" alt="Ảnh cưới" loading="lazy">
-            </div>
-            <div class="gallery-item scale-in" onclick="openLightbox(20)">
-                <img src="images/DUY01219.JPG" alt="Ảnh cưới" loading="lazy">
+                <img src="images/DUY01105.webp" alt="Ảnh cưới" loading="lazy">
             </div>
         </div>
     </section>
@@ -1688,13 +1665,10 @@
 
         // ===== GALLERY LIGHTBOX =====
         const galleryImages = [
-            'images/DUY00465.JPG', 'images/DUY00590.JPG', 'images/DUY00627.JPG',
-            'images/DUY00641.JPG', 'images/DUY00708.JPG', 'images/DUY00744.JPG',
-            'images/DUY00778.JPG', 'images/DUY00826.JPG', 'images/DUY00854.JPG',
-            'images/DUY00857.JPG', 'images/DUY00923.JPG', 'images/DUY00992.JPG',
-            'images/DUY01027.JPG', 'images/DUY01060.JPG', 'images/DUY01088.JPG',
-            'images/DUY01105.JPG', 'images/DUY01123.JPG', 'images/DUY01129.JPG',
-            'images/DUY01146.JPG', 'images/DUY01166.JPG', 'images/DUY01219.JPG'
+            'images/DUY00744.webp', 'images/DUY00465.webp', 'images/DUY00590.webp',
+            'images/DUY00627.webp', 'images/DUY00857.webp', 'images/DUY01027.webp',
+            'images/DUY00826.webp', 'images/DUY00923.webp', 'images/DUY01146.webp',
+            'images/DUY01088.webp', 'images/DUY01060.webp', 'images/DUY01105.webp'
         ];
         let currentImage = 0;
 
