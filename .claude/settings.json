@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(convert images/27256128961047050.jpg -quality 85 images/27256128961047050.webp)",
+      "Bash(ls -lh images/27256128961047050.*)"
+    ]
+  }
+}
